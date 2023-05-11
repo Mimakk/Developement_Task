@@ -1,16 +1,18 @@
+/* Importing Fonts */
 @font-face {
-    font-family: 'ITC Avant Garde Gothic Pro';
-    src: url('fonts/ITC_Avant_Garde_Gothic_Pro/ITCAvantGardePro-Bk.otf') format('truetype'),
-         url('fonts/ITC_Avant_Garde_Gothic_Pro/ITCAvantGardePro-Bold.otf') format('truetype'),
-         url('fonts/ITC_Avant_Garde_Gothic_Pro/ITCAvantGardePro-Demi.otf') format('truetype'),
-         url('fonts/ITC_Avant_Garde_Gothic_Pro/ITCAvantGardePro-Md.otf') format('truetype');
+    font-family: "ITC Avant Garde Gothic Pro";
+    src: url("/assets/font/ITCAvantGardePro-Bk.otf");
+    src: url("/assets/font/ITCAvantGardePro-Bold.otf");
+    src: url("/assets/font/ITCAvantGardePro-Demi.otf");
+    src: url("/assets/font/ITCAvantGardePro-Md.otf");
 }
 
 @font-face {
-    font-family: 'Avenir';
-    src: url('fonts/Avenir.ttc') format('truetype');
+    font-family: "Avenir";
+    src: url("/assets/font/Avenir.ttc");
 }
 
+/* Global Styles */
 *, 
 *::before, 
 *::after {
@@ -20,17 +22,14 @@
     cursor: default;
 }
 
+/* Body Styles */
 body {
     font-family: 'Avenir', sans-serif;
     background: #FFFFFF;
 }
 
 h1 {
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
-    font-weight: 700;
-    font-size: 31.25px;
-    line-height: 40.62px;
-    color: #000000;
+    font-family: 'ITC_Avant_Garde_Gothic_Pro', sans-serif, bold;
 }
 
 .container {
@@ -57,6 +56,33 @@ h1 {
     padding: 5rem;
 }
 
+.content h1 {
+    font-weight: bold !important;
+    font-size: 31.25px;
+    line-height: 40.62px;
+    color: #000000;
+}
+
+.all-items-btn {
+    text-transform: capitalize;
+    width: 146px;
+    height: 17px;
+}
+
+.all-items-btn a {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+    font-family: 'Avenir';
+    font-style: bold;
+    font-weight: 900;
+    font-size: 12.8px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
 .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -70,4 +96,9 @@ h1 {
     display: flex;
     flex-direction: column;
     overflow-x: scroll;
+}
+
+.price {
+    font-weight: bold !important;
+    color: #000000;
 }
