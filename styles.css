@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Pro';
+    src: url('fonts/ITC_Avant_Garde_Gothic_Pro/ITCAvantGardePro-Bk.otf') format('truetype'),
+         url('fonts/ITC_Avant_Garde_Gothic_Pro/ITCAvantGardePro-Bold.otf') format('truetype'),
+         url('fonts/ITC_Avant_Garde_Gothic_Pro/ITCAvantGardePro-Demi.otf') format('truetype'),
+         url('fonts/ITC_Avant_Garde_Gothic_Pro/ITCAvantGardePro-Md.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('fonts/Avenir.ttc') format('truetype');
+}
+
 
 *, 
 *::before, 
@@ -6,5 +19,6 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 
 
