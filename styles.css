@@ -28,6 +28,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    max-height: 100vh;
 }
 
 .left-side {
@@ -90,7 +91,7 @@ h1#hdng {
 }
 
 .arrow {
-    border: solid gray;
+    border: solid lightgray;
     padding: 0.5rem;
 }
 
@@ -111,7 +112,7 @@ h1#hdng {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    padding: 0 6rem;
+    padding: 0 0 0 6rem;
     margin: 0 0 6rem 0;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -153,6 +154,12 @@ h1#hdng {
     margin: 0.5rem 0;
 }
 
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .price {
     font-family: "Avenir", sans-serif;
     font-style: normal;
@@ -162,4 +169,45 @@ h1#hdng {
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.colors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.colors span {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.color1 {
+    background: #99C3CC;
+}
+
+.color2 {
+    background: #CC9999;
+}
+
+.color3 {
+    background: #CB99CC;
+}
+
+.color4 {
+    background: #A6CC99;
+}
+
+.colors input {
+    display: none;
+}
+
+.colors input:checked+span {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
 }
