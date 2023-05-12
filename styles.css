@@ -97,9 +97,17 @@ h1#mobile {
     text-transform: capitalize;
 }
 
+.all-items-btn a:hover {
+    padding-bottom: 0.5rem;
+}
+
 .arrow {
     border: solid lightgray;
     padding: 0.5rem;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
 }
 
 .forarrow {
