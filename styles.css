@@ -53,13 +53,16 @@ body {
 }
 
 h1#hdng {
-    font-family: "ITC Avant Garde Gothic Pro", sans-serif;
+    font-family: "ITC Avant Garde Gothic Pro Bold", sans-serif;
     font-weight: 700;
     font-size: 2rem;
     line-height: 130%;
     color: #000000;
 }
 
+h1#mobile {
+    display: none;
+}
 
 .content p {
     font-family: "Avenir";
@@ -210,4 +213,135 @@ h1#hdng {
 .colors input:checked+span {
     transform: scale(0.7);
     box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+/*  */
+/* Media Queries */
+/*  */
+
+@media screen and (max-width: 870px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-30rem);
+        min-width: 100%;
+    }
+
+    h1#hdng {
+        display: none;
+    }
+
+    h1#mobile {
+        display: block;
+        font-family: "ITC Avant Garde Gothic Pro Bold", sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 130%;
+        color: #fff;
+        margin: 0;
+    }
+
+    .desc {
+        display: none;
+    }
+
+    .all-items-btn {
+        margin: 2rem 0;
+    } 
+
+    .all-items-btn a {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 17px;
+        text-transform: capitalize;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-12rem);
+        min-width: 100%;
+    }
+
+    h1#hdng {
+        display: none;
+    }
+
+    h1#mobile {
+        display: block;
+        font-family: "ITC Avant Garde Gothic Pro Bold", sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 130%;
+        color: #fff;
+        margin: 0;
+    }
+
+    .desc {
+        display: none;
+    }
+
+    .content {
+        margin: 0 1.5rem;
+    }
+    
+    .all-items-btn {
+        margin: 1.5rem 0;
+    }
+
+    .all-items-btn a {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 17px;
+        text-transform: capitalize;
+    }
+
+    .forarrow {
+        display: none;
+    }
+
+    .scroll {
+        padding: 0 0 0 1.5rem;
+        margin: 0 0 1.5rem 0;
+        overflow: auto;
+    }
+
+    .item {
+        width: 12rem;
+        grid-gap: 1rem;
+    }
+
+    .item img {
+        height: 12rem;
+    }
+
+    .product-name {
+        overflow-wrap: break-word;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
 }
